@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+/* navbar style */
+.row,
+.introduction,
+.light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.nav {
+  padding-top: 20px;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  transition: all 0.3s ease;
+}
+ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.Landing h2 {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #37447e;
+}
+.buy {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.nav-links button {
+  background-color: #111b47;
+  color: white;
+  width: 140px;
+  padding: 5px;
+  outline: none;
+  height: 26px;
+  gap: 0px;
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+}
+nav {
+  background-image: url("shap1.png");
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0;
+  background-size: cover;
+  padding: 0px 0px 50px 0;
+}
+/* navbar responsive style */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 40px;
+    left: -100%;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    transition: left 0.3s ease;
+  }
+  .row {
+    justify-content: end;
+    padding: 5px 20px;
+  }
+  .nav-links.active {
+    left: 0;
+  }
+  .nav-links a {
+    color: #fff;
+  }
+  .nav-links li {
+    margin: 20px 0;
+  }
+  .menu-toggle {
+    display: flex;
+    padding: 20px 30px;
+  }
+}
+/* Introduce Your Product */
+.heading {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 66px;
+  letter-spacing: 1px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #091133;
+}
+.pera {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #505f98;
+}
+.introduction {
+  padding-top: 50px;
+}
+.btn .btn1 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #111b47;
+  color: white;
+}
+.btn .btn2 {
+  color: #091133;
+}
+.btn button {
+  width: 189px;
+  height: 36px;
+  gap: 0px;
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+}
+.intro,
+.lighttext {
+  max-width: 500px;
+}
+.introimg img {
+  max-width: 500px;
+}
+/* responsive introduction product */
+@media (max-width: 1000px) {
+  .introduction .intro {
+    padding: 0 20px 50px 20px;
+  }
+  .btn {
+    row-gap: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .introimg img {
+    max-width: 300px;
+  }
+}
+/* Light, Fast & Powerful style */
+.lighttext {
+  padding: 0 20px;
+}
+.light {
+  padding: 50px 0;
+}
+.lightimg img {
+  max-width: 500px;
+}
+.titleheading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #091133;
+  padding: 10px 0;
+  text-align: center;
+}
+.titlepera {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #5d6970;
+  max-width: 500px;
+}
+.part2 {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+@media (max-width: 1000px) {
+  .lightimg img {
+    max-width: 300px;
+  }
+}
+/* A Price To Suit Everyone */
+.price {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+.price .pera {
+  max-width: 650px;
+  padding: 20px 0;
+  text-align: center;
+}
+.count {
+  text-align: center;
+}
+.see {
+  text-align: center;
+}
+.see button {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 109px;
+  height: 24px;
+  top: 4px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #111b47;
+  color: white;
+}
+.count h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 66px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #222f65;
+}
+.ui {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #37447e;
+}
+.item {
+  display: flex;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+.footericon {
+  justify-content: space-around;
+}
+.icon i {
+  padding: 10px;
+}
+@media (max-width: 460px) {
+  .footer2,
+  .item,
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .count h1 {
+    font-size: 40px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 380px) {
+  .heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .count h1 {
+    font-size: 30px;
+  }
+  .pera {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
